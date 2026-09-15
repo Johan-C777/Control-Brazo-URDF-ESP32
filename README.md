@@ -1,7 +1,7 @@
 # Control de Brazo Robótico (URDF) mediante ESP32 y PyBullet
 
 **Estudiante:** Johan Andrés Canchala Arenas  
-**Asignatura:** Microcontroladores / Sistemas Embebidos  
+**Asignatura:** Microcontroladores
 **Universidad:** Universidad Militar Nueva Granada  
 
 ---
@@ -18,24 +18,22 @@ El sistema utiliza tres potenciómetros para leer la intención de movimiento de
 
 ```mermaid
 graph LR
-    subgraph Entorno Físico (ESP32)
+    subgraph Fisico [Entorno Físico ESP32]
         A[Potenciómetro 1] -->|ADC| D[ESP32]
         B[Potenciómetro 2] -->|ADC| D
         C[Potenciómetro 3] -->|ADC| D
     end
 
-    subgraph Comunicación
+    subgraph Comunicacion [Comunicación]
         D -->|Trama CSV UART 115200| E[Puerto Serial PC]
     end
 
-    subgraph Entorno Virtual (Python + PyBullet)
+    subgraph Virtual [Entorno Virtual Python y PyBullet]
         E -->|Lectura PySerial| F[Procesamiento Python]
         F -->|Mapeo de Límites| G[Motor Control 2]
         G -->|Target Position| H[Simulador PyBullet / URDF]
     end
 ```
-
----
 
 ## 3. Mapeo de Hardware y Articulaciones
 
@@ -57,7 +55,7 @@ El modelo URDF proporcionado cuenta con una base giratoria, un eslabón de eleva
 
 | Montaje General del Circuito (ESP32 + Potenciómetros) |
 | :---: |
-| ![Montaje Físico](img/Montaje.jpg) |
+| ![Montaje Físico](img/Montaje.jpeg) |
 | *Conexión de los potenciómetros a los pines de conversión analógica-digital del ESP32.* |
 
 | Simulación en PyBullet (Posicionamiento) | Simulación en PyBullet (Pinza Cerrada) |
