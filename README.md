@@ -67,7 +67,7 @@ El modelo URDF proporcionado cuenta con una base giratoria, un eslabón de eleva
 
 En el siguiente video se valida la comunicación en tiempo real y la sincronización entre el movimiento físico de los sensores analógicos y las articulaciones del robot en la simulación:
 
-▶️ **[VER VIDEO DEMOSTRATIVO DEL EJERCICIO]([https://www.kapwing.com/w/rGB2ZpcQ2N](https://videotourl.com/videos/1790303712417-382f3ef7-bbc2-4fa1-a31d-739283d78a77.mp4)**
+▶️ **[VER VIDEO DEMOSTRATIVO DEL EJERCICIO]([https://www.kapwing.com/w/rGB2ZpcQ2N](https://videotourl.com/videos/1790303712417-382f3ef7-bbc2-4fa1-a31d-739283d78a77.mp4])**
 
 ---
 
